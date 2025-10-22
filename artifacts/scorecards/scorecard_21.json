@@ -1,0 +1,31 @@
+{
+  "seed": 21,
+  "score": 0.0,
+  "details": [
+    {
+      "scenario": "division_by_zero",
+      "ok": false,
+      "weight": 0.25
+    },
+    {
+      "scenario": "index_error",
+      "ok": false,
+      "weight": 0.2
+    },
+    {
+      "scenario": "bad_date",
+      "ok": false,
+      "weight": 0.2
+    },
+    {
+      "scenario": "type_error",
+      "ok": false,
+      "weight": 0.2
+    },
+    {
+      "scenario": "import_error",
+      "ok": false,
+      "weight": 0.15
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Core agent stack
+langchain
+langgraph
+langchain-groq
+pydantic>=2
+
+# Memory
+chromadb
+
+# Frontend
+streamlit
+
+# Utilities
+python-dotenv
+pyyaml
+requests

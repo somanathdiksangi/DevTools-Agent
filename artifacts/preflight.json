@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "check": "GROQ_API_KEY",
+      "ok": true,
+      "reason": "required for LLM"
+    },
+    {
+      "check": "COMPOSIO_API_KEY",
+      "ok": true,
+      "reason": "required for live Tool Router (mock otherwise)"
+    },
+    {
+      "check": "langchain",
+      "ok": true,
+      "reason": "1.0.2"
+    },
+    {
+      "check": "langgraph",
+      "ok": true,
+      "reason": "1.0.1"
+    },
+    {
+      "check": "chromadb",
+      "ok": true,
+      "reason": "1.2.1"
+    }
+  ]
+}
