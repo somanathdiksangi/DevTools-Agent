@@ -2,13 +2,14 @@
 import streamlit as st
 import json
 import pandas as pd
+
 from main import (
     run_self_heal, get_traces, evaluator, evaluator_aggregate, preflight,
     cloud_cli, open_pr_and_ci, autogen_template_loader
 )
 
 st.set_page_config(page_title="Self-Healing DevTools Agent", layout="wide")
-st.title("Self-Healing DevTools Agent with Tool Router")
+st.title("Self-Healing DevTools Agent")
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(
     ["Run Demo", "Telemetry", "ToolRouter Dashboard", "Evaluator", "Cloud CLI"]
@@ -46,7 +47,7 @@ with tab2:
             "status": e["status"],
             "latency_ms": e.get("meta", {}).get("latency_ms", 0.0)
         } for e in tool_events])
-        st.bar_chart(df, x="action", y="latency_ms")
+        st.bar_chart(df, x="action", y="latency_ms", width="stretch")
 
 with tab3:
     st.subheader("ToolRouter Dashboard")
@@ -69,7 +70,7 @@ with tab3:
             view = view[view["app"] == app_filter]
         if action_filter != "All":
             view = view[view["action"] == action_filter]
-        st.dataframe(view, use_container_width=True)
+        st.dataframe(view, width="stretch")
     else:
         st.info("No ToolRouter calls recorded yet.")
 

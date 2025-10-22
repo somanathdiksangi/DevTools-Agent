@@ -27,7 +27,7 @@ from importlib.metadata import version, PackageNotFoundError
 # ========= Environment & LLM =========
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 assert GROQ_API_KEY, "Missing GROQ_API_KEY"
-MODEL_NAME = os.getenv("MODEL_NAME", "llama-3.1-70b-specdec")  # use an active Groq model
+MODEL_NAME = os.getenv("MODEL_NAME", "llama-3.1-8b-instant")  # use an active Groq model
 llm = ChatGroq(model=MODEL_NAME, temperature=0.2)
 
 # ========= Vector Memory (Chroma) =========

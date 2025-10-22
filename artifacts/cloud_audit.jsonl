@@ -4,3 +4,5 @@
 {"run_id": "c1dde111-4325-4db9-8d53-f289e5751f0d", "action": "version", "params": {}, "ts": 1761140380145.248, "res_ok": true}
 {"run_id": "ea124178-7617-4189-9459-795ff9f2ba0d", "action": "presign", "params": {}, "ts": 1761155622072.704, "res_ok": true}
 {"run_id": "ea124178-7617-4189-9459-795ff9f2ba0d", "action": "list", "params": {}, "ts": 1761155672745.0117, "res_ok": true}
+{"run_id": "1e578310-065b-4d24-8912-293f64db4d5f", "action": "list", "params": {}, "ts": 1761157174196.7732, "res_ok": true}
+{"run_id": "1e578310-065b-4d24-8912-293f64db4d5f", "action": "list", "params": {"bucket": "demo-bucket", "key": "path/to/file.txt", "expires": 300}, "ts": 1761157421341.5508, "res_ok": true}
