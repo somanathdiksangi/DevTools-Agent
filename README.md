@@ -122,8 +122,8 @@ The **Self-Healing DevTools Agent** combines multiple features into one complete
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/self-healing-devtools-agent.git
-cd self-healing-devtools-agent
+git clone https://github.com/somanathdiksangi/DevTools-Agent.git
+cd DevTools-Agent
 ```
 
 2. Install dependencies:
